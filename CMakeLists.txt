@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(project)
+project(project LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -18,12 +18,19 @@ include_directories(libwb)
 include_directories(include)
 include_directories(dataset)
 
+find_package(OpenMP)
+find_package(Threads REQUIRED)
+
 add_executable(project
         src/main.cpp
         src/histogram_eq.cpp
 )
 
-target_link_libraries(project wb)
+if(OpenMP_CXX_FOUND)
+    target_link_libraries(project PUBLIC wb Threads::Threads OpenMP::OpenMP_CXX)
+endif()
+
+#target_link_libraries(project wb)
 
 ##############################################################
 # Tests
