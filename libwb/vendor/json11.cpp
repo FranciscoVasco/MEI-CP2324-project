@@ -35,6 +35,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <limits>
+#include <type_traits>
 
 namespace json11 {
 
@@ -180,7 +181,11 @@ protected:
   }
 
   bool less(const JsonValue *other) const override {
-    return m_value < static_cast<const Value<tag, T> *>(other)->m_value;
+      if constexpr (std::is_same<T, std::nullptr_t>::value) {
+          return false; // You might need a different logic here depending on your requirements
+      } else {
+          return m_value < static_cast<const Value<tag, T>*>(other)->m_value;
+      }
   }
 
   const T m_value;

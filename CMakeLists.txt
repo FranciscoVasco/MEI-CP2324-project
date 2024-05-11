@@ -23,7 +23,9 @@ find_package(Threads REQUIRED)
 
 add_executable(project
         src/main.cpp
+        src/histogram_par.cpp
         src/histogram_eq.cpp
+        include/histogram_eq.h
 )
 
 if(OpenMP_CXX_FOUND)

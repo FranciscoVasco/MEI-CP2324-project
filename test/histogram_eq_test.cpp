@@ -1,8 +1,8 @@
 #include <filesystem>
 #include "gtest/gtest.h"
-#include "histogram_eq.h"
+#include "histogram_par.h"
 
-using namespace cp;
+using namespace cp_par;
 
 #define DATASET_FOLDER "../../dataset/"
 
