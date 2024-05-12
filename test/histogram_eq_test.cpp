@@ -4,7 +4,7 @@
 
 using namespace cp_par;
 
-#define DATASET_FOLDER "../../dataset/"
+#define DATASET_FOLDER "../dataset/"
 
 TEST(HistogramEq, Input01_4) {
 

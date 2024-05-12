@@ -15,8 +15,8 @@ include_directories(libwb)
 # project
 ###############
 
-include_directories(include)
-include_directories(dataset)
+include_directories(include dataset)
+
 
 find_package(OpenMP)
 find_package(Threads REQUIRED)
