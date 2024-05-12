@@ -29,7 +29,9 @@ add_executable(project
 )
 
 if(OpenMP_CXX_FOUND)
+    message("------ found")
     target_link_libraries(project PUBLIC wb Threads::Threads OpenMP::OpenMP_CXX)
+    target_compile_options(project PUBLIC "${OpenMP_CXX_FLAGS}")
 endif()
 
 #target_link_libraries(project wb)

@@ -14,4 +14,4 @@ set (TEST_SOURCES
         ../src/histogram_par.cpp)
 
 add_executable(${TEST_TARGET} ${TEST_SOURCES})
-target_link_libraries(${TEST_TARGET} ${GTEST_BOTH_LIBRARIES} wb)
+target_link_libraries(${TEST_TARGET} ${GTEST_BOTH_LIBRARIES} wb Threads::Threads OpenMP::OpenMP_CXX)

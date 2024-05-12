@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "template_example.h"
+#include "histogram_par.h"
 
 using namespace cp;
 
