@@ -1,0 +1,1 @@
+cmd='/snap/clion/275/bin/cmake/linux/x64/bin/cmake;-DBENCHMARK_DOWNLOAD_DEPENDENCIES=ON;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'

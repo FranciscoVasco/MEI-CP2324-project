@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/project.dir/src/main.cpp.o CMakeFiles/project.dir/src/histogram_par.cpp.o CMakeFiles/project.dir/src/histogram_eq.cpp.o -o project  libwb/libwb.a /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.a 

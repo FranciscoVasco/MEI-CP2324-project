@@ -1,0 +1,1607 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.8.0-31-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/3.28.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b877/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5b877.dir/build.make CMakeFiles/cmTC_5b877.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P'
+        Building CXX object CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b877.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5b877.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccWd2IMh.s
+        GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b877.dir/'
+         as -v --64 -o CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWd2IMh.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5b877
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b877.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5b877 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b877' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b877.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFSa8Pq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5b877 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b877' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b877.'
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P']
+        ignore line: []
+        ignore line: [Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b877/fast]
+        ignore line: [gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5b877.dir/build.make CMakeFiles/cmTC_5b877.dir/build]
+        ignore line: [gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-5UhT3P']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b877.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5b877.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccWd2IMh.s]
+        ignore line: [GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b877.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWd2IMh.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5b877]
+        ignore line: [/snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b877.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5b877 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b877' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b877.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFSa8Pq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5b877 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccFSa8Pq.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5b877] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_5b877.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:135 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f80b/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4f80b.dir/build.make CMakeFiles/cmTC_4f80b.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj'
+        Building CXX object CMakeFiles/cmTC_4f80b.dir/CheckFunctionExists.cxx.o
+        /usr/bin/c++   -DCHECK_FUNCTION_EXISTS=shm_open -o CMakeFiles/cmTC_4f80b.dir/CheckFunctionExists.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_4f80b
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f80b.dir/link.txt --verbose=1
+        /usr/bin/c++  -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_4f80b.dir/CheckFunctionExists.cxx.o -o cmTC_4f80b  -lrt 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-cw8brj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:188 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9522f/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9522f.dir/build.make CMakeFiles/cmTC_9522f.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB'
+        Building CXX object CMakeFiles/cmTC_9522f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  -Wall -std=c++11   -Wall -o CMakeFiles/cmTC_9522f.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB/src.cxx
+        Linking CXX executable cmTC_9522f
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9522f.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall CMakeFiles/cmTC_9522f.dir/src.cxx.o -o cmTC_9522f 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0PYmUB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:189 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2c351/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2c351.dir/build.make CMakeFiles/cmTC_2c351.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84'
+        Building CXX object CMakeFiles/cmTC_2c351.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++11   -Wextra -o CMakeFiles/cmTC_2c351.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84/src.cxx
+        Linking CXX executable cmTC_2c351
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c351.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra CMakeFiles/cmTC_2c351.dir/src.cxx.o -o cmTC_2c351 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lhpz84'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:190 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d45be/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d45be.dir/build.make CMakeFiles/cmTC_d45be.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4'
+        Building CXX object CMakeFiles/cmTC_d45be.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++11   -Wshadow -o CMakeFiles/cmTC_d45be.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4/src.cxx
+        Linking CXX executable cmTC_d45be
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d45be.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow CMakeFiles/cmTC_d45be.dir/src.cxx.o -o cmTC_d45be 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-lIh4F4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:191 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96f3c/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_96f3c.dir/build.make CMakeFiles/cmTC_96f3c.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l'
+        Building CXX object CMakeFiles/cmTC_96f3c.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++11   -Wfloat-equal -o CMakeFiles/cmTC_96f3c.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l/src.cxx
+        Linking CXX executable cmTC_96f3c
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96f3c.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal CMakeFiles/cmTC_96f3c.dir/src.cxx.o -o cmTC_96f3c 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-vXe44l'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:192 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f13f/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4f13f.dir/build.make CMakeFiles/cmTC_4f13f.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg'
+        Building CXX object CMakeFiles/cmTC_4f13f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++11   -Wold-style-cast -o CMakeFiles/cmTC_4f13f.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg/src.cxx
+        Linking CXX executable cmTC_4f13f
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f13f.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast CMakeFiles/cmTC_4f13f.dir/src.cxx.o -o cmTC_4f13f 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-MRlycg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:193 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5fbc0/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5fbc0.dir/build.make CMakeFiles/cmTC_5fbc0.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO'
+        Building CXX object CMakeFiles/cmTC_5fbc0.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++11   -Wconversion -o CMakeFiles/cmTC_5fbc0.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO/src.cxx
+        Linking CXX executable cmTC_5fbc0
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fbc0.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion CMakeFiles/cmTC_5fbc0.dir/src.cxx.o -o cmTC_5fbc0 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Gi4TBO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:195 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_93469/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_93469.dir/build.make CMakeFiles/cmTC_93469.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL'
+        Building CXX object CMakeFiles/cmTC_93469.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -std=c++11   -Werror -o CMakeFiles/cmTC_93469.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL/src.cxx
+        Linking CXX executable cmTC_93469
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93469.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror CMakeFiles/cmTC_93469.dir/src.cxx.o -o cmTC_93469 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-yZLeZL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:201 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ef7d0/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ef7d0.dir/build.make CMakeFiles/cmTC_ef7d0.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1'
+        Building CXX object CMakeFiles/cmTC_ef7d0.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic -std=c++11   -pedantic -o CMakeFiles/cmTC_ef7d0.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1/src.cxx
+        Linking CXX executable cmTC_ef7d0
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef7d0.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic CMakeFiles/cmTC_ef7d0.dir/src.cxx.o -o cmTC_ef7d0 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-614XE1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:202 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4aa03/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4aa03.dir/build.make CMakeFiles/cmTC_4aa03.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS'
+        Building CXX object CMakeFiles/cmTC_4aa03.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors -std=c++11   -pedantic-errors -o CMakeFiles/cmTC_4aa03.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS/src.cxx
+        Linking CXX executable cmTC_4aa03
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4aa03.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors CMakeFiles/cmTC_4aa03.dir/src.cxx.o -o cmTC_4aa03 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-8gGzMS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:203 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6dadb/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6dadb.dir/build.make CMakeFiles/cmTC_6dadb.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm'
+        Building CXX object CMakeFiles/cmTC_6dadb.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++11   -Wshorten-64-to-32 -o CMakeFiles/cmTC_6dadb.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm/src.cxx
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        gmake[5]: *** [CMakeFiles/cmTC_6dadb.dir/build.make:78: CMakeFiles/cmTC_6dadb.dir/src.cxx.o] Error 1
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm'
+        gmake[4]: *** [Makefile:127: cmTC_6dadb/fast] Error 2
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-0EuNDm'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:204 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f746/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8f746.dir/build.make CMakeFiles/cmTC_8f746.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5'
+        Building CXX object CMakeFiles/cmTC_8f746.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing -std=c++11   -fstrict-aliasing -o CMakeFiles/cmTC_8f746.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5/src.cxx
+        Linking CXX executable cmTC_8f746
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f746.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing CMakeFiles/cmTC_8f746.dir/src.cxx.o -o cmTC_8f746 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-COJ8U5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:207 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06503/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_06503.dir/build.make CMakeFiles/cmTC_06503.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD'
+        Building CXX object CMakeFiles/cmTC_06503.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++11   -Wno-deprecated-declarations -o CMakeFiles/cmTC_06503.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD/src.cxx
+        Linking CXX executable cmTC_06503
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06503.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations CMakeFiles/cmTC_06503.dir/src.cxx.o -o cmTC_06503 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-2hlYtD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:217 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d24b/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d24b.dir/build.make CMakeFiles/cmTC_7d24b.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8'
+        Building CXX object CMakeFiles/cmTC_7d24b.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++11   -Wno-deprecated -o CMakeFiles/cmTC_7d24b.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8/src.cxx
+        Linking CXX executable cmTC_7d24b
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d24b.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated CMakeFiles/cmTC_7d24b.dir/src.cxx.o -o cmTC_7d24b 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-LBQAB8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:225 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_519cf/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_519cf.dir/build.make CMakeFiles/cmTC_519cf.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68'
+        Building CXX object CMakeFiles/cmTC_519cf.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++11   -Wstrict-aliasing -o CMakeFiles/cmTC_519cf.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68/src.cxx
+        Linking CXX executable cmTC_519cf
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_519cf.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing CMakeFiles/cmTC_519cf.dir/src.cxx.o -o cmTC_519cf 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-WeYN68'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:230 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_663d0/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_663d0.dir/build.make CMakeFiles/cmTC_663d0.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT'
+        Building CXX object CMakeFiles/cmTC_663d0.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++11   -wd654 -o CMakeFiles/cmTC_663d0.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT/src.cxx
+        c++: error: unrecognized command-line option '-wd654'
+        c++: error: unrecognized command-line option '-wd654'
+        gmake[5]: *** [CMakeFiles/cmTC_663d0.dir/build.make:78: CMakeFiles/cmTC_663d0.dir/src.cxx.o] Error 1
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT'
+        gmake[4]: *** [Makefile:127: cmTC_663d0/fast] Error 2
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-SkgKaT'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:231 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a809a/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a809a.dir/build.make CMakeFiles/cmTC_a809a.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8'
+        Building CXX object CMakeFiles/cmTC_a809a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++11   -Wthread-safety -o CMakeFiles/cmTC_a809a.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8/src.cxx
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        gmake[5]: *** [CMakeFiles/cmTC_a809a.dir/build.make:78: CMakeFiles/cmTC_a809a.dir/src.cxx.o] Error 1
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8'
+        gmake[4]: *** [Makefile:127: cmTC_a809a/fast] Error 2
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hGQxz8'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:282 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c737/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5c737.dir/build.make CMakeFiles/cmTC_5c737.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC'
+        Building CXX object CMakeFiles/cmTC_5c737.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -std=c++11   --coverage -o CMakeFiles/cmTC_5c737.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC/src.cxx
+        Linking CXX executable cmTC_5c737
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c737.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage CMakeFiles/cmTC_5c737.dir/src.cxx.o -o cmTC_5c737 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-Ori3eC'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:312 (cxx_feature_check)"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e6dd/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e6dd.dir/build.make CMakeFiles/cmTC_9e6dd.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_9e6dd.dir/std_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_9e6dd.dir/std_regex.cpp.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/std_regex.cpp
+        Linking CXX executable cmTC_9e6dd
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e6dd.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_9e6dd.dir/std_regex.cpp.o -o cmTC_9e6dd 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:313 (cxx_feature_check)"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cd398/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cd398.dir/build.make CMakeFiles/cmTC_cd398.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_cd398.dir/gnu_posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_cd398.dir/gnu_posix_regex.cpp.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/gnu_posix_regex.cpp
+        /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/gnu_posix_regex.cpp:1:10: fatal error: gnuregex.h: No such file or directory
+            1 | #include <gnuregex.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.
+        gmake[5]: *** [CMakeFiles/cmTC_cd398.dir/build.make:78: CMakeFiles/cmTC_cd398.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        gmake[4]: *** [Makefile:127: cmTC_cd398/fast] Error 2
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:314 (cxx_feature_check)"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_922d5/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_922d5.dir/build.make CMakeFiles/cmTC_922d5.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_922d5.dir/posix_regex.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_922d5.dir/posix_regex.cpp.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_922d5
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_922d5.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_922d5.dir/posix_regex.cpp.o -o cmTC_922d5 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:323 (cxx_feature_check)"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07bd3/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07bd3.dir/build.make CMakeFiles/cmTC_07bd3.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_07bd3.dir/steady_clock.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_07bd3.dir/steady_clock.cpp.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_07bd3
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07bd3.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_07bd3.dir/steady_clock.cpp.o -o cmTC_07bd3 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:326 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70e45/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70e45.dir/build.make CMakeFiles/cmTC_70e45.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU'
+        Building CXX object CMakeFiles/cmTC_70e45.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_70e45.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU/src.cxx
+        Linking CXX executable cmTC_70e45
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70e45.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_70e45.dir/src.cxx.o -o cmTC_70e45 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-g3uYrU'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:327 (cxx_feature_check)"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68acd/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68acd.dir/build.make CMakeFiles/cmTC_68acd.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_68acd.dir/pthread_affinity.cpp.o
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_68acd.dir/pthread_affinity.cpp.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_68acd
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68acd.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  CMakeFiles/cmTC_68acd.dir/pthread_affinity.cpp.o -o cmTC_68acd 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/src/CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/3.28.1/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/src/CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7cbe9/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7cbe9.dir/build.make CMakeFiles/cmTC_7cbe9.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb'
+        Building C object CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o -c /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7cbe9.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7cbe9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc7ut3s8.s
+        GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7cbe9.dir/'
+         as -v --64 -o CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o /tmp/cc7ut3s8.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_7cbe9
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cbe9.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o -o cmTC_7cbe9 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7cbe9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7cbe9.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8xyjX4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7cbe9 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7cbe9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7cbe9.'
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/src/CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/src/CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb']
+        ignore line: []
+        ignore line: [Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7cbe9/fast]
+        ignore line: [gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7cbe9.dir/build.make CMakeFiles/cmTC_7cbe9.dir/build]
+        ignore line: [gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-eALAJb']
+        ignore line: [Building C object CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o -c /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7cbe9.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7cbe9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc7ut3s8.s]
+        ignore line: [GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7cbe9.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o /tmp/cc7ut3s8.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_7cbe9]
+        ignore line: [/snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cbe9.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o -o cmTC_7cbe9 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7cbe9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7cbe9.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8xyjX4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7cbe9 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc8xyjX4.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7cbe9] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_7cbe9.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "test/CMakeLists.txt:8 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_UNUSED_VARIABLE"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_UNUSED_VARIABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_74f59/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_74f59.dir/build.make CMakeFiles/cmTC_74f59.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY'
+        Building CXX object CMakeFiles/cmTC_74f59.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_UNUSED_VARIABLE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable -std=c++11   -Wno-unused-variable -o CMakeFiles/cmTC_74f59.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY/src.cxx
+        Linking CXX executable cmTC_74f59
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74f59.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable CMakeFiles/cmTC_74f59.dir/src.cxx.o -o cmTC_74f59 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-hwyeYY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:33 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_O3_FLAG"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_O3_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ec089/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ec089.dir/build.make CMakeFiles/cmTC_ec089.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA'
+        Building CXX object CMakeFiles/cmTC_ec089.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_O3_FLAG  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  -std=c++11   -O3 -o CMakeFiles/cmTC_ec089.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA/src.cxx
+        Linking CXX executable cmTC_ec089
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec089.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  CMakeFiles/cmTC_ec089.dir/src.cxx.o -o cmTC_ec089 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-RnUFNA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:136 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0dc23/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0dc23.dir/build.make CMakeFiles/cmTC_0dc23.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K'
+        Building CXX object CMakeFiles/cmTC_0dc23.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  -std=c++11   -Werror=deprecated-declarations -o CMakeFiles/cmTC_0dc23.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K/src.cxx
+        Linking CXX executable cmTC_0dc23
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0dc23.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  CMakeFiles/cmTC_0dc23.dir/src.cxx.o -o cmTC_0dc23 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-ifSu4K'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:206 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_WNO_ODR"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_WNO_ODR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0421f/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0421f.dir/build.make CMakeFiles/cmTC_0421f.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK'
+        Building CXX object CMakeFiles/cmTC_0421f.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_WNO_ODR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  -std=c++11   -Wno-odr -o CMakeFiles/cmTC_0421f.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK/src.cxx
+        Linking CXX executable cmTC_0421f
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0421f.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  CMakeFiles/cmTC_0421f.dir/src.cxx.o -o cmTC_0421f 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-NiUUZK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "test/CMakeLists.txt:207 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test BENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH"
+    directories:
+      source: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX"
+      binary: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake/Modules;/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark/cmake"
+    buildResult:
+      variable: "BENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX'
+        
+        Run Build Command(s): /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6d7e/fast
+        gmake[4]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e6d7e.dir/build.make CMakeFiles/cmTC_e6d7e.dir/build
+        gmake[5]: Entering directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX'
+        Building CXX object CMakeFiles/cmTC_e6d7e.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  -std=c++11   -Wno-lto-type-mismatch -o CMakeFiles/cmTC_e6d7e.dir/src.cxx.o -c /home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX/src.cxx
+        Linking CXX executable cmTC_e6d7e
+        /snap/clion/275/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6d7e.dir/link.txt --verbose=1
+        /usr/bin/c++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wno-unused-variable  CMakeFiles/cmTC_e6d7e.dir/src.cxx.o -o cmTC_e6d7e 
+        gmake[5]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX'
+        gmake[4]: Leaving directory '/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/CMakeFiles/CMakeScratch/TryCompile-nWGkRX'
+        
+      exitCode: 0
+...

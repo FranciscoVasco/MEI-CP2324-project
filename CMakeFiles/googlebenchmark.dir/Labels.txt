@@ -1,0 +1,14 @@
+# Target labels
+ googlebenchmark
+# Source files and their labels
+/home/tomedias/CLionProjects/MEI-CP2324-project/CMakeFiles/googlebenchmark
+/home/tomedias/CLionProjects/MEI-CP2324-project/CMakeFiles/googlebenchmark.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/CMakeFiles/googlebenchmark-complete.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-build.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-configure.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-download.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-install.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-mkdir.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-patch.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-test.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-update.rule

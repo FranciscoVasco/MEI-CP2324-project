@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/CMakeFiles/googletest
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/CMakeFiles/googletest.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/CMakeFiles/googletest-complete.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-build.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-configure.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-download.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-install.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-mkdir.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-patch.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-test.rule
+/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/src/googlebenchmark-build/third_party/googletest/stamp/googletest-update.rule

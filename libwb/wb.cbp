@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="wb"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\googletest\;CMake Files\googletest\src\;CMake Files\googletest\src\googlemock\;CMake Files\googletest\src\googlemock\cmake\;CMake Files\googletest\src\googletest\;CMake Files\googletest\src\googletest\cmake\;CMake Files\googlebenchmark\;CMake Files\googlebenchmark\tmp\;CMake Files\cmake\;CMake Files\libwb\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wb">
+				<Option output="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/libwb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 wb"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wb/fast">
+				<Option output="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/libwb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 wb/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libwb">
+				<Option output="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/libwb.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 libwb"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libwb/fast">
+				<Option output="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/libwb.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 libwb/fast"/>
+					<CompileFile command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -f &quot;/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/vendor/json11.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/vendor/json11.hpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbArg.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbArg.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbCUDA.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbCUDA.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbDataset.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbDataset.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbDirectory.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbDirectory.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbExit.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbExit.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbExport.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbExport.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbFile.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbFile.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbImage.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbImage.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbImport.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbImport.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbInit.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbInit.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbLogger.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbLogger.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbMPI.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbMPI.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbPPM.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbPPM.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbPath.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbPath.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbSolution.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbSolution.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbSparse.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbSparse.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbTimer.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbTimer.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbUtils.cpp">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/wbUtils.h">
+			<Option target="wb"/>
+			<Option target="libwb"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest\src\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest\src\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\googletest\src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\googletest\src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest\src\googletest\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\googletest\src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\googletest\src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\googletest\src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googletest/src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\googletest\src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/googlebenchmark/tmp/googlebenchmark-mkdirs.cmake">
+			<Option virtualFolder="CMake Files\googlebenchmark\tmp\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/cmake/CMakeLists.googletest.in">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libwb\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/libwb/sources.cmake">
+			<Option virtualFolder="CMake Files\libwb\"/>
+		</Unit>
+		<Unit filename="/home/tomedias/CLionProjects/MEI-CP2324-project/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

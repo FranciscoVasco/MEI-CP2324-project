@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/histogram_eq_test.dir/histogram_eq_test.cpp.o CMakeFiles/histogram_eq_test.dir/__/src/histogram_par.cpp.o CMakeFiles/histogram_eq_test.dir/__/src/histogram_eq.cpp.o -o histogram_eq_test  ../lib/libgtest_main.a ../lib/libgtest.a ../libwb/libwb.a /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.a 
