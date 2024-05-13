@@ -22,7 +22,7 @@ namespace cp {
 
     static void init_image_arr(int size_channels,unsigned char *uchar_image_arr, const float *input_image_data){
 
-        #pragma omp parallel for
+        //#pragma omp parallel for
 
         for (int i = 0; i < size_channels; i++)
             uchar_image_arr[i] = (unsigned char) (255 * input_image_data[i]);
@@ -31,7 +31,7 @@ namespace cp {
 
     static void calculate_rgb(int height, int width, const unsigned char* uchar_image_arr,unsigned  char* gray_image_arr){
 
-        #pragma omp parallel for collapse(2)
+        //#pragma omp parallel for collapse(2)
         for (int i = 0; i < height; i++)
             for (int j = 0; j < width; j++) {
                 auto idx = i * width + j;
@@ -62,14 +62,14 @@ namespace cp {
 
     static void fill_with_correct_color(int size_channels,float cdf_min, unsigned char *uchar_image_arr, const float *cdf){
 
-        #pragma omp parallel for
+        //#pragma omp parallel for
         for (int i = 0; i < size_channels; i++)
             uchar_image_arr[i] = correct_color(cdf[uchar_image_arr[i]], cdf_min);
     }
 
     static void fill_output(int size_channels, float *output_image_data, const unsigned char *uchar_image_arr){
 
-        #pragma omp parallel for
+        //#pragma omp parallel for
         for (int i = 0; i < size_channels; i++)
             output_image_data[i] = static_cast<float>(uchar_image_arr[i]) / 255.0f;
     }

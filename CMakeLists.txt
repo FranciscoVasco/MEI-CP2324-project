@@ -103,9 +103,9 @@ add_subdirectory(${GBM_HOME}/src
         EXCLUDE_FROM_ALL)
 
 set (GTEST_BOTH_LIBRARIES gtest_main gtest)
-set (GBM_BOTH_LIBRARIES benchmark_main benchmark libbenchmark libbenchmark_main)
+set (GBM_BOTH_LIBRARIES benchmark_main benchmark)
 
-add_subdirectory (test)
+add_subdirectory(test)
 add_subdirectory(benchmarking)
 
 

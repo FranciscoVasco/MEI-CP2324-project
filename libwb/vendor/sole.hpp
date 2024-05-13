@@ -291,7 +291,7 @@ namespace sole {
                 localtime_s( &tm, &t );
             )
             $melse(
-                localtime_r( &t, &tm );
+                //localtime_r( &t, &tm );
             )
 
             std::stringstream ss;
