@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+project(googlebenchmark LANGUAGES C CXX)
+
+include(ExternalProject)
+
+set (GBM_HOME ${PROJECT_SOURCE_DIR}/../googlebenchmark)
+
+ExternalProject_Add(googlebenchmark
+        GIT_REPOSITORY    https://github.com/google/benchmark.git
+        GIT_TAG           main
+        SOURCE_DIR "${GBM_HOME}/src"
+        BINARY_DIR "${GBM_HOME}/build"
+        PREFIX            googlebenchmark
+        CMAKE_ARGS        -DBENCHMARK_DOWNLOAD_DEPENDENCIES=ON
+        BUILD_COMMAND     ${CMAKE_COMMAND} --build . --config Release
+        INSTALL_COMMAND   ""
+        TEST_COMMAND      ${CMAKE_CTEST_COMMAND} --build-config Release
+)
