@@ -11,6 +11,8 @@ set(BUILD_LIBWB_LIBRARY ON CACHE BOOL "Turn on build of libwb library")
 add_subdirectory(libwb)
 include_directories(libwb)
 
+
+
 ###############
 # project
 ###############
@@ -26,7 +28,7 @@ ExternalProject_Add(googlebenchmark
         GIT_REPOSITORY    https://github.com/google/benchmark.git
         GIT_TAG           main
         PREFIX            googlebenchmark
-        CMAKE_ARGS        -DBENCHMARK_DOWNLOAD_DEPENDENCIES=ON
+        CMAKE_ARGS        -DBENCHMARK_DOWNLOAD_DEPENDENCIES=ON , -DBENCHMARK_ENABLE_GTEST_TESTS=OFF
         BUILD_COMMAND     ${CMAKE_COMMAND} --build . --config Release
         INSTALL_COMMAND   ""
         TEST_COMMAND      ${CMAKE_CTEST_COMMAND} --build-config Release
@@ -71,7 +73,11 @@ enable_testing()
 
 set (GTEST_HOME ${CMAKE_CURRENT_BINARY_DIR}/googletest)
 
+
 message ("-- Loading Google Test from ${GTEST_HOME}")
+
+set (GBM_HOME ${CMAKE_CURRENT_BINARY_DIR}/googlebenchmark/src)
+
 
 configure_file(${PROJECT_SOURCE_DIR}/cmake/CMakeLists.googletest.in ${GTEST_HOME}/download/CMakeLists.txt)
 
@@ -97,6 +103,14 @@ add_subdirectory(${GTEST_HOME}/src
         ${GTEST_HOME}/build
         EXCLUDE_FROM_ALL)
 
+add_subdirectory(${GBM_HOME}/googlebenchmark
+        EXCLUDE_FROM_ALL)
+
 set (GTEST_BOTH_LIBRARIES gtest_main gtest)
+set (GBM_BOTH_LIBRARIES benchmark benchmark_main)
 
 add_subdirectory (test)
+add_subdirectory(benchmarking)
+
+
+

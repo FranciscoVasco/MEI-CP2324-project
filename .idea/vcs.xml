@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/benchmark/googletest/src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/build/googlebenchmark/src/googlebenchmark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/googlebenchmark/src/googlebenchmark-build/third_party/googletest/src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/build/googletest/src" vcs="Git" />
   </component>
 </project>
