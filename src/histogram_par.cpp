@@ -57,8 +57,6 @@ namespace cp_par {
             cdf[i] = cdf[i - 1] + prob(histogram[i], size);
 
         auto cdf_min = cdf[0];
-        for (int i = 1; i < HISTOGRAM_LENGTH; i++)
-            cdf_min = std::min(cdf_min, cdf[i]);
 
 #pragma omp parallel for
         for (int i = 0; i < size_channels; i++){

@@ -100,6 +100,7 @@ namespace cp {
 
         fill_hist(size,histogram,gray_image_arr);
 
+
         cdf[0] = prob(histogram[0], size);
 
         fill_cdf(size,cdf,histogram);
