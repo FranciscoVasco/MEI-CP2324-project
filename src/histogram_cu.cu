@@ -17,7 +17,6 @@ namespace cuda {
     }
     ///DONE
 
-
     __global__ void histogramKernel(unsigned char *data, int *hist, int dataSize, int numBins) {
         int idx = blockIdx.x * blockDim.x + threadIdx.x;
         if (idx < dataSize) {
@@ -52,7 +51,6 @@ namespace cuda {
         if (idx < size) {
             image[idx] = (unsigned char) (255 * data[idx]);
         }
-
     }
 
 
@@ -86,7 +84,7 @@ namespace cuda {
 
         int gridSize;
 
-
+        ///CREATE UNSIGNED CHAR IMAGE
         float *d_data_image;
         unsigned char *d_image;
         cudaMalloc((void**)&d_data_image, dataSize * 3 * sizeof(float));
@@ -134,7 +132,8 @@ namespace cuda {
         cudaMalloc((void **) &image_data, dataSize*3*  sizeof(unsigned char));
         cudaMemcpy(doutput,output_image_data, dataSize*3*sizeof(float),cudaMemcpyHostToDevice);
         cudaMemcpy(image_data,image, dataSize*3*sizeof(unsigned char),cudaMemcpyHostToDevice);
-        calcOutput<<<gridSize*3, THREADS_PER_BLOCK>>>(doutput,image_data,dataSize*3);
+        gridSize = (3*dataSize+ THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
+        calcOutput<<<gridSize, THREADS_PER_BLOCK>>>(doutput,image_data,dataSize*3);
         cudaMemcpy(output_image_data, doutput, dataSize*3 * sizeof(float), cudaMemcpyDeviceToHost);
 
     }
