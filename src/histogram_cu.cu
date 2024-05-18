@@ -1,19 +1,10 @@
-//
-// Created by tomedias on 5/17/24.
-//
 #include "histogram_cu.cuh"
 
 namespace cuda {
-    constexpr auto THREADS_PER_BLOCK = 512;
+    constexpr auto THREADS_PER_BLOCK = 256;
     constexpr auto HISTOGRAM_LENGTH = 256;
     static float inline prob(const int x, const int size) {
         return (float) x / (float) size;
-    }
-    unsigned char inline clamp(unsigned char x) {
-        return std::min(std::max(x, static_cast<unsigned char>(0)), static_cast<unsigned char>(255));
-    }
-    unsigned char inline correct_color(float cdf_val, float cdf_min) {
-        return clamp(static_cast<unsigned char>(255 * (cdf_val - cdf_min) / (1 - cdf_min)));
     }
     ///DONE
 
@@ -53,18 +44,21 @@ namespace cuda {
         }
     }
 
-
-
-
-
+    __global__ void fill_with_correct_color(unsigned char *image, float *cdf, float cdf_min, int size){
+        int idx = blockIdx.x * blockDim.x + threadIdx.x;
+        if (idx < size) {
+            auto x = static_cast<unsigned char>(255 * (cdf[image[idx]] - cdf_min) / (1 - cdf_min));
+            if(x > 255){
+                image[idx] = static_cast<unsigned char>(255);
+            }else if (x<0){
+                image[idx] = static_cast<unsigned char>(0);
+            }else{
+                image[idx] = x;
+            }
+        }
+    }
 
     //TODO
-
-    void fill_with_correct_color(int size_channels,float cdf_min, unsigned char *uchar_image_arr, const float *cdf){
-
-        for (int i = 0; i < size_channels; i++)
-            uchar_image_arr[i] = correct_color(cdf[uchar_image_arr[i]], cdf_min);
-    }
     void fill_cdf(int size,float *cdf, int *histogram){
         for (int i = 1; i < HISTOGRAM_LENGTH; i++)
             cdf[i] = cdf[i - 1] + prob(histogram[i], size);
@@ -122,7 +116,18 @@ namespace cuda {
         cdf[0] = prob(hist[0], dataSize);
         float cdf_min = cdf[0];
         fill_cdf(dataSize,cdf,hist);
-        fill_with_correct_color(dataSize*3,cdf_min,image,cdf);
+
+
+        ///CALCULATE IMAGE FROM CDF
+        unsigned char* imaged;
+        float *dcdf;
+        cudaMalloc((void **) &imaged, dataSize * 3 * sizeof(unsigned char));
+        cudaMalloc((void**) &dcdf, HISTOGRAM_LENGTH * sizeof(float) );
+        cudaMemcpy(imaged, image, dataSize*3*sizeof(unsigned char), cudaMemcpyHostToDevice);
+        cudaMemcpy(dcdf, cdf, HISTOGRAM_LENGTH*sizeof(float), cudaMemcpyHostToDevice);
+        gridSize = (3*dataSize+ THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
+        fill_with_correct_color<<<gridSize, THREADS_PER_BLOCK>>>(imaged,dcdf,cdf_min,dataSize*3);
+        cudaMemcpy(image, imaged,  dataSize*3*sizeof(unsigned char),cudaMemcpyDeviceToHost);
 
 
         ///CALCULATE OUTPUT
