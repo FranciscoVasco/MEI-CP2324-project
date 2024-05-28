@@ -2,6 +2,7 @@
 #include "benchmark/benchmark.h"
 #include "histogram_par.h"
 #include "histogram_eq.h"
+#include "histogram_cu.cuh"
 #include <wb.h>
 
 #define DATASET_FOLDER "../dataset/"
@@ -10,18 +11,34 @@ wbImage_t inputImage = wbImport(DATASET_FOLDER "input01.ppm");
 
 static void BM_Par_Hist(benchmark::State& state){
     for (auto _ : state) {
-        cp_par::iterative_histogram_equalization(inputImage, 4);
+        cp_par::iterative_histogram_equalization(state.range(0), state.range(1));
     }
 }
 
 static void BM_Seq_Hist(benchmark::State& state){
     for (auto _ : state) {
-        cp::iterative_histogram_equalization(inputImage, 4);
+        cp::iterative_histogram_equalization(state.range(0), state.range(1));
     }
 }
 
-BENCHMARK(BM_Par_Hist);
-BENCHMARK(BM_Seq_Hist);
+static void BM_CUDA_Hist(benchmark::State& state){
+    for (auto _ : state) {
+        cuda::iterative_histogram_equalization(state.range(0), state.range(1));
+    }
+}
+
+BENCHMARK(BM_Par_Hist)
+->Args({inputImage,1});
+->Args({inputImage,5});
+->Args({inputImage,10});
+BENCHMARK(BM_Seq_Hist)
+->Args({inputImage,1});
+->Args({inputImage,5});
+->Args({inputImage,10});
+BENCHMARK(BM_CUDA_Hist)
+->Args({inputImage,1});
+->Args({inputImage,5});
+->Args({inputImage,10});
 
 
 BENCHMARK_MAIN();

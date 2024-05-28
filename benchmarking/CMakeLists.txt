@@ -3,6 +3,7 @@ set(TEST_TARGET "bm_target")
 set (TEST_SOURCES
         ../src/histogram_par.cpp
         ../src/histogram_eq.cpp
+        ../src/histogram_cu.cu
         bm_histogram_par.cpp
         bm_histogram_par.h)
 
