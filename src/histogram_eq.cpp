@@ -100,15 +100,10 @@ namespace cp {
 
         fill_hist(size,histogram,gray_image_arr);
 
-
         cdf[0] = prob(histogram[0], size);
 
         fill_cdf(size,cdf,histogram);
-
-
-        float cdf_min = calculate_cdf_min(cdf);
-
-
+        float cdf_min = cdf[0];
         fill_with_correct_color(size_channels,cdf_min,uchar_image_arr,cdf);
         fill_output(size_channels,output_image_data,uchar_image_arr);
     }

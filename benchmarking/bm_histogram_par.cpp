@@ -11,34 +11,34 @@ wbImage_t inputImage = wbImport(DATASET_FOLDER "input01.ppm");
 
 static void BM_Par_Hist(benchmark::State& state){
     for (auto _ : state) {
-        cp_par::iterative_histogram_equalization(state.range(0), state.range(1));
+        cp_par::iterative_histogram_equalization(inputImage, state.range(0));
     }
 }
 
 static void BM_Seq_Hist(benchmark::State& state){
     for (auto _ : state) {
-        cp::iterative_histogram_equalization(state.range(0), state.range(1));
+        cp::iterative_histogram_equalization(inputImage, state.range(0));
     }
 }
 
 static void BM_CUDA_Hist(benchmark::State& state){
     for (auto _ : state) {
-        cuda::iterative_histogram_equalization(state.range(0), state.range(1));
+        cuda::iterative_histogram_equalization(inputImage, state.range(0));
     }
 }
 
 BENCHMARK(BM_Par_Hist)
-->Args({inputImage,1});
-->Args({inputImage,5});
-->Args({inputImage,10});
+->Arg(1)
+->Arg(5)
+->Arg(10);
 BENCHMARK(BM_Seq_Hist)
-->Args({inputImage,1});
-->Args({inputImage,5});
-->Args({inputImage,10});
+->Arg(1)
+->Arg(5)
+->Arg(10);
 BENCHMARK(BM_CUDA_Hist)
-->Args({inputImage,1});
-->Args({inputImage,5});
-->Args({inputImage,10});
+->Arg(1)
+->Arg(5)
+->Arg(10);
 
 
 BENCHMARK_MAIN();

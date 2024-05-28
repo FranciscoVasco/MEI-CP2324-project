@@ -6,29 +6,6 @@ namespace cuda {
     static float inline prob(const int x, const int size) {
         return (float) x / (float) size;
     }
-    ///DONE
-
-    __global__ void histogramKernel(unsigned char *data, int *hist, int dataSize, int numBins) {
-        int idx = blockIdx.x * blockDim.x + threadIdx.x;
-        if (idx < dataSize) {
-            int bin = data[idx];
-            if (bin < numBins) {
-                atomicAdd(&hist[bin], 1);
-            }
-        }
-    }
-
-
-    __global__ void grayImage(unsigned char *image_data, unsigned char* grayImage, int dataSize){
-        int idx = blockIdx.x * blockDim.x + threadIdx.x;
-
-        if (idx < dataSize) {
-            auto r = image_data[3*idx];
-            auto g = image_data[3*idx+1];
-            auto b = image_data[3 * idx + 2];
-            grayImage[idx] = static_cast<unsigned char>(0.21 * r + 0.71 * g + 0.07 * b);
-        }
-    }
 
     __global__ void calcOutput(float* output, unsigned char* image, int size){
         int idx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -37,10 +14,17 @@ namespace cuda {
         }
     }
 
-    __global__ void calculate_image(float *data, unsigned char* image, int size){
+    __global__ void calculate_image(float *data, unsigned char* image, int size, int *hist){
         int idx = blockIdx.x * blockDim.x + threadIdx.x;
         if (idx < size) {
-            image[idx] = (unsigned char) (255 * data[idx]);
+            auto r = (unsigned char) (255 * data[3*idx]);
+            auto g = (unsigned char) (255 * data[3*idx + 1]);
+            auto b = (unsigned char) (255 * data[3*idx + 2]);
+            image[3*idx] = r;
+            image[3*idx +1] = g;
+            image[3*idx +2] = b;
+            auto value = static_cast<unsigned char>(0.21 * r + 0.71 * g + 0.07 * b);
+            atomicAdd(&hist[value], 1);
         }
     }
 
@@ -58,7 +42,6 @@ namespace cuda {
         }
     }
 
-    //TODO
     void fill_cdf(int size,float *cdf, int *histogram){
         for (int i = 1; i < HISTOGRAM_LENGTH; i++)
             cdf[i] = cdf[i - 1] + prob(histogram[i], size);
@@ -68,7 +51,6 @@ namespace cuda {
     void histogram_equalization(int width, int height, float *data,
                                 float *output_image_data,
                                 unsigned char *image,
-                                unsigned char *gray_image,
                                 int (&hist)[HISTOGRAM_LENGTH],
                                 float (&cdf)[HISTOGRAM_LENGTH]){
         int dataSize = width * height;
@@ -78,40 +60,18 @@ namespace cuda {
 
         int gridSize;
 
-        ///CREATE UNSIGNED CHAR IMAGE
+        ///CREATE UNSIGNED CHAR IMAGE and hist
         float *d_data_image;
         unsigned char *d_image;
+        int *d_hist;
         cudaMalloc((void**)&d_data_image, dataSize * 3 * sizeof(float));
         cudaMalloc((void**)&d_image, dataSize * 3 * sizeof(unsigned char));
+        cudaMalloc((void**)&d_hist, HISTOGRAM_LENGTH * sizeof(int));
         cudaMemcpy(d_data_image, data, dataSize * 3 * sizeof(float), cudaMemcpyHostToDevice);
         gridSize = (dataSize*3 + THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
-        calculate_image<<<gridSize, THREADS_PER_BLOCK>>>(d_data_image, d_image, dataSize * 3);
+        calculate_image<<<gridSize, THREADS_PER_BLOCK>>>(d_data_image, d_image, dataSize,d_hist);
         cudaMemcpy(image, d_image, dataSize * 3 * sizeof(unsigned char), cudaMemcpyDeviceToHost);
-
-
-
-        ///CREATE GRAY IMAGE
-        unsigned char *d_data;
-        unsigned char*dgray_image;
-        cudaMalloc((void**)&d_data, dataSize*3*sizeof(float));
-        cudaMalloc((void **)&dgray_image, dataSize*sizeof(unsigned char));
-        cudaMemcpy(d_data, image, dataSize*3*sizeof(float),cudaMemcpyHostToDevice);
-        cudaMemcpy(dgray_image,gray_image, dataSize * sizeof(unsigned char),cudaMemcpyHostToDevice);
-        gridSize = (dataSize+ THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
-        grayImage<<<gridSize, THREADS_PER_BLOCK>>>(d_data, dgray_image, dataSize);
-        cudaMemcpy(gray_image, dgray_image, dataSize * sizeof(unsigned char), cudaMemcpyDeviceToHost);
-
-
-        ///FILL HISTOGRAM
-        unsigned char *gray_data;
-        int *d_hist;
-        cudaMalloc((void **) &gray_data, dataSize* sizeof(float));
-        cudaMalloc((void **) &d_hist, HISTOGRAM_LENGTH * sizeof(int));
-        cudaMemcpy(gray_data, gray_image, dataSize * sizeof(float), cudaMemcpyHostToDevice);
-        cudaMemcpy(d_hist, hist, HISTOGRAM_LENGTH * sizeof(int), cudaMemcpyHostToDevice);
-        histogramKernel<<<gridSize, THREADS_PER_BLOCK>>>(gray_data, d_hist, dataSize, HISTOGRAM_LENGTH);
         cudaMemcpy(hist, d_hist, HISTOGRAM_LENGTH * sizeof(int), cudaMemcpyDeviceToHost);
-
 
         cdf[0] = prob(hist[0], dataSize);
         float cdf_min = cdf[0];
@@ -129,7 +89,6 @@ namespace cuda {
         fill_with_correct_color<<<gridSize, THREADS_PER_BLOCK>>>(imaged,dcdf,cdf_min,dataSize*3);
         cudaMemcpy(image, imaged,  dataSize*3*sizeof(unsigned char),cudaMemcpyDeviceToHost);
 
-
         ///CALCULATE OUTPUT
         float *doutput;
         unsigned char *image_data;
@@ -137,10 +96,8 @@ namespace cuda {
         cudaMalloc((void **) &image_data, dataSize*3*  sizeof(unsigned char));
         cudaMemcpy(doutput,output_image_data, dataSize*3*sizeof(float),cudaMemcpyHostToDevice);
         cudaMemcpy(image_data,image, dataSize*3*sizeof(unsigned char),cudaMemcpyHostToDevice);
-        gridSize = (3*dataSize+ THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
         calcOutput<<<gridSize, THREADS_PER_BLOCK>>>(doutput,image_data,dataSize*3);
-        cudaMemcpy(output_image_data, doutput, dataSize*3 * sizeof(float), cudaMemcpyDeviceToHost);
-
+        cudaMemcpy(output_image_data, doutput, dataSize * 3 * sizeof(float), cudaMemcpyDeviceToHost);
     }
 
 
@@ -153,11 +110,10 @@ namespace cuda {
         int histogram[HISTOGRAM_LENGTH];
         float cdf[HISTOGRAM_LENGTH];
         auto *uchar_image_arr = new unsigned char[width*height*3];
-        auto *gray_image_arr = new unsigned char[width*height];
         for(int i = 0 ; i< iterations;i++){
             histogram_equalization(width, height,
                                    data,output_image_data,
-                                   uchar_image_arr, gray_image_arr,
+                                   uchar_image_arr,
                                    histogram,cdf);
             data = output_image_data;
         }
