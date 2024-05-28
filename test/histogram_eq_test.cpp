@@ -11,8 +11,7 @@
 
 TEST(HistogramEq, Input01_4) {
 
-    wbImage_t inputImage = wbImport(DATASET_FOLDER "sample_5184×3456.ppm");
-    //wbImage_t outputImagePar = cp_par::iterative_histogram_equalization(inputImage, 4);
+    wbImage_t inputImage = wbImport(DATASET_FOLDER "input01.ppm");
     wbImage_t outputImagePar = cuda::iterative_histogram_equalization(inputImage,20);
     wbImage_t outputImageSeq = cp::iterative_histogram_equalization(inputImage, 20);
 
@@ -22,10 +21,9 @@ TEST(HistogramEq, Input01_4) {
     float* imageParData = wbImage_getData(outputImagePar);
     float* imageSeqData = wbImage_getData(outputImageSeq);
 
-//    for(int i = 0; i < imageWidth; i++)
-//        for(int j = 0; j < imageHeight; j++)
-//            EXPECT_EQ(imageParData[i*imageHeight+j],imageSeqData[i*imageHeight+j]);
+    for(int i = 0; i < imageWidth; i++)
+        for(int j = 0; j < imageHeight; j++)
+            EXPECT_NEAR(imageParData[i*imageHeight+j],imageSeqData[i*imageHeight+j], 3e-2);
 
     wbExport("../dataset/outputtest.ppm", outputImagePar);
-    // check if the output image is correct
 }
