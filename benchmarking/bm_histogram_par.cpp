@@ -7,10 +7,10 @@
 
 #define DATASET_FOLDER "../dataset/"
 
-wbImage_t inputImage512 = wbImport(DATASET_FOLDER "input01.ppm");
-wbImage_t inputImage1024 = wbImport(DATASET_FOLDER "input01.ppm");
-wbImage_t inputImage2048 = wbImport(DATASET_FOLDER "input01.ppm");
-wbImage_t inputImage4096 = wbImport(DATASET_FOLDER "input01.ppm");
+wbImage_t inputImage512 = wbImport(DATASET_FOLDER "image512.ppm");
+wbImage_t inputImage1024 = wbImport(DATASET_FOLDER "image1024.ppm");
+wbImage_t inputImage2048 = wbImport(DATASET_FOLDER "image2048.ppm");
+wbImage_t inputImage4096 = wbImport(DATASET_FOLDER "input4096.ppm");
 
 static void BM_Par_Hist512(benchmark::State& state){
     for (auto _ : state) {
