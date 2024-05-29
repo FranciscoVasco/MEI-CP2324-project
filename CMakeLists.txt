@@ -57,6 +57,12 @@ add_executable(project
         include/histogram_cu.cuh
 )
 
+add_executable(dataset_generator
+        src/dataset_generator.cpp
+        src/dataset_generator.cpp
+)
+target_link_libraries(dataset_generator wb)
+
 if(OpenMP_CXX_FOUND)
     message("------ found")
     target_link_libraries(project PUBLIC wb Threads::Threads OpenMP::OpenMP_CXX)
