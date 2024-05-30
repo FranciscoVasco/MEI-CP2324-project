@@ -167,7 +167,8 @@ BENCHMARK(BM_Seq_Hist2048)
 ->Arg(1)
 ->Arg(5)
 ->Arg(10)
-->Arg(20);
+->Arg(20)
+->Unit(benchmark::kMillisecond);
 BENCHMARK(BM_CUDA_Hist2048)
 ->Arg(1)
 ->Arg(5)
