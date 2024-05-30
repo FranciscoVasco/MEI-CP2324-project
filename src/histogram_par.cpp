@@ -82,7 +82,7 @@ namespace cp_par {
 
             input_image_data = output_image_data;
         }
-
+        delete[] uchar_image_arr;
         return output_image;
     }
 }

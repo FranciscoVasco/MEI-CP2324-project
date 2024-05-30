@@ -81,16 +81,12 @@ namespace cp {
         unsigned char *uchar_image_arr = uchar_image.get();
         unsigned char *gray_image_arr = gray_image.get();
         init_image_arr(size_channels,uchar_image_arr,input_image_data);
-        omp_set_num_threads(8); // nr of cores of the cpu
         calculate_rgb(height, width, uchar_image_arr,
                       gray_image_arr);
 
         std::fill(histogram, histogram + HISTOGRAM_LENGTH, 0);
 
         fill_hist(size,histogram,gray_image_arr);
-//        for (int i = 0 ; i< HISTOGRAM_LENGTH;i++){
-//            std::cout << i << ": " << histogram[i] <<  std::endl;
-//        }
 
         cdf[0] = prob(histogram[0], size);
 

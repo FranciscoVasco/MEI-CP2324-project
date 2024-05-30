@@ -11,9 +11,9 @@
 
 TEST(HistogramEq, Input01_4) {
 
-    wbImage_t inputImage = wbImport(DATASET_FOLDER "input01.ppm");
-    wbImage_t outputImagePar = cuda::iterative_histogram_equalization(inputImage,20);
-    wbImage_t outputImageSeq = cp::iterative_histogram_equalization(inputImage, 20);
+    wbImage_t inputImage = wbImport(DATASET_FOLDER "image2048.ppm");
+    wbImage_t outputImagePar = cuda::iterative_histogram_equalization(inputImage,10);
+    wbImage_t outputImageSeq = cp::iterative_histogram_equalization(inputImage, 10);
 
     const int imageWidth = wbImage_getWidth(outputImagePar);
     const int imageHeight = wbImage_getHeight(outputImagePar);

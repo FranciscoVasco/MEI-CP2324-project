@@ -1,7 +1,7 @@
 #include "histogram_cu.cuh"
 
 namespace cuda {
-    constexpr auto THREADS_PER_BLOCK = 256;
+    constexpr auto THREADS_PER_BLOCK = 512;
     constexpr auto HISTOGRAM_LENGTH = 256;
     static float inline prob(const int x, const int size) {
         return (float) x / (float) size;
@@ -88,6 +88,8 @@ namespace cuda {
         gridSize = (3*dataSize+ THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
         fill_with_correct_color<<<gridSize, THREADS_PER_BLOCK>>>(d_image,dcdf,cdf_min,dataSize*3);
         cudaDeviceSynchronize();
+
+
         ///CALCULATE OUTPUT
         float *doutput;
         cudaMalloc((void **) &doutput, dataSize*3* sizeof(float));
@@ -107,7 +109,6 @@ namespace cuda {
         float *output_image_data = wbImage_getData(output_image);
         int histogram[HISTOGRAM_LENGTH];
         float cdf[HISTOGRAM_LENGTH];
-        auto *uchar_image_arr = new unsigned char[width*height*3];
         for(int i = 0 ; i< iterations;i++){
             histogram_equalization(width, height,
                                    data,output_image_data,

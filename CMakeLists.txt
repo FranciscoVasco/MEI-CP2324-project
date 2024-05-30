@@ -4,13 +4,14 @@ project(project LANGUAGES C CXX CUDA)
 set(CMAKE_CXX_STANDARD 17)
 set( CMAKE_CUDA_FLAGS "" CACHE STRING "" )
 
+set(CMAKE_BUILD_TYPE Release)
+
 if ( CMAKE_CUDA_FLAGS )
     list(REMOVE_ITEM CMAKE_CUDA_FLAGS "--cudart static")
 endif()
 string(APPEND CMAKE_CUDA_FLAGS "--cudart shared")
 
-
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CUDA_FLAGS_RELEASE "${CMAKE_CUDA_FLAGS}")
 
 ##############################################################
 # Autodetect CUDA architecture(s)
