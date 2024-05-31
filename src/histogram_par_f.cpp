@@ -66,10 +66,8 @@ namespace cp_par_f {
         apply_cdf(uchar_image_arr, output_image_data, cdf, cdf_min, size_channels);
     }
 
-    wbImage_t iterative_histogram_equalization(wbImage_t &input_image, int iterations,
-                                               bool parallel_histogram = true,
-                                               bool parallel_cdf = true,
-                                               bool parallel_apply = true) {
+    wbImage_t iterative_histogram_equalization(wbImage_t &input_image, int iterations
+                                               ) {
 
         const auto width = wbImage_getWidth(input_image);
         const auto height = wbImage_getHeight(input_image);
@@ -86,9 +84,10 @@ namespace cp_par_f {
         auto *uchar_image_arr = new unsigned char[size_channels];
 
         for (int i = 0; i < iterations; i++) {
-            histogram_equalization(width, height, input_image_data, output_image_data,
-                                   uchar_image_arr, histogram, cdf,
-                                   parallel_histogram, parallel_cdf, parallel_apply);
+            histogram_equalization(width, height,
+                                   input_image_data, output_image_data,
+                                   uchar_image_arr,
+                                   histogram, cdf);
 
             input_image_data = output_image_data;
         }

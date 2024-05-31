@@ -1,6 +1,8 @@
 #include "histogram_eq.h"
 #include "histogram_cu.cuh"
 #include "histogram_par.h"
+#include "histogram_cu_f.cuh"
+#include "histogram_par_f.h"
 #include <cstdlib>
 
 int main(int argc, char **argv) {
@@ -19,7 +21,7 @@ int main(int argc, char **argv) {
     //cuda::iterative_histogram_equalization(inputImage);
     int n_iterations = static_cast<int>(std::strtol(argv[2], nullptr, 10));
     std::cout << n_iterations << std::endl;
-    wbImage_t outputImage =cuda::iterative_histogram_equalization(inputImage,n_iterations);
+    wbImage_t outputImage =cuda_f::iterative_histogram_equalization(inputImage,n_iterations);
     std::cout << argv[3] << std::endl;
     wbExport(argv[3], outputImage);
     //cuda::test2();

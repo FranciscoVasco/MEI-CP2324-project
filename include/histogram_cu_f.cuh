@@ -7,9 +7,6 @@
 #define PROJECT_HISTOGRAM_CU_F_CUH
 namespace cuda_f {
 
-    void test();
-    void test2();
-
     wbImage_t iterative_histogram_equalization(wbImage_t &input_image, int iterations);
 }
 #endif //PROJECT_HISTOGRAM_CU_F_CUH

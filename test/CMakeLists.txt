@@ -13,7 +13,12 @@ set (TEST_SOURCES
         histogram_eq_test.cpp
         ../src/histogram_par.cpp
         ../src/histogram_eq.cpp
-        ../src/histogram_cu.cu)
+        ../src/histogram_cu.cu
+        ../src/histogram_cu_f.cu
+        ../src/histogram_par_f.cpp
+)
+
+
 
 
 add_executable(${TEST_TARGET} ${TEST_SOURCES})

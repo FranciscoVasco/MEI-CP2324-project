@@ -51,13 +51,20 @@ find_package(Threads REQUIRED)
 
 add_executable(project
         src/main.cpp
-        src/histogram_par.cpp
         src/histogram_eq.cpp
-        include/histogram_eq.h
+
+        src/histogram_par.cpp
+        src/histogram_par_f.cpp
+
         src/histogram_cu.cu
+        src/histogram_cu_f.cu
+
+        include/histogram_eq.h
+        include/histogram_par.h
+        include/histogram_par_f.h
         include/histogram_cu.cuh
         include/histogram_cu_f.cuh
-        include/histogram_par_f.cpp
+
 )
 
 add_executable(dataset_generator
