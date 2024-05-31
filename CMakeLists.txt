@@ -56,6 +56,8 @@ add_executable(project
         include/histogram_eq.h
         src/histogram_cu.cu
         include/histogram_cu.cuh
+        include/histogram_cu_f.cuh
+        include/histogram_par_f.cpp
 )
 
 add_executable(dataset_generator

@@ -33,6 +33,8 @@ namespace cp_par {
 
         omp_set_num_threads(4);
         std::fill(histogram, histogram + HISTOGRAM_LENGTH, 0);
+
+
     #pragma omp parallel for reduction(+:histogram[:HISTOGRAM_LENGTH])
         for (int i = 0; i < size; i++){
             auto r = (unsigned char) (255 * input_image_data[3*i]);
