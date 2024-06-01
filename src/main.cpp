@@ -4,6 +4,7 @@
 #include "histogram_cu_f.cuh"
 #include "histogram_par_f.h"
 #include <cstdlib>
+#include <chrono>
 
 int main(int argc, char **argv) {
 
@@ -20,10 +21,10 @@ int main(int argc, char **argv) {
 
     //cuda::iterative_histogram_equalization(inputImage);
     int n_iterations = static_cast<int>(std::strtol(argv[2], nullptr, 10));
-    std::cout << n_iterations << std::endl;
+    auto now = std::chrono::system_clock::now();
     wbImage_t outputImage =cuda_f::iterative_histogram_equalization(inputImage,n_iterations);
-    std::cout << argv[3] << std::endl;
-    wbExport(argv[3], outputImage);
-    //cuda::test2();
+    auto end = std::chrono::system_clock::now();
+    std::chrono::duration<double> duration = end - now;
+    std::cout << "Time taken by the operation: " << duration.count() << " seconds" << std::endl;
     return 0;
 }

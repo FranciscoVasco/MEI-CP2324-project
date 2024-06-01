@@ -31,7 +31,7 @@ namespace cp_par {
         const auto size = width * height;
         const auto size_channels = size * channels;
 
-        omp_set_num_threads(4);
+        omp_set_num_threads(8);
         std::fill(histogram, histogram + HISTOGRAM_LENGTH, 0);
 
 

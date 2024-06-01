@@ -3,7 +3,6 @@
 //
 
 #include "histogram_par.h"
-#include <omp.h>
 
 namespace cp {
     constexpr auto HISTOGRAM_LENGTH = 256;
