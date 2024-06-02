@@ -11,6 +11,8 @@ wbImage_t inputImage512 = wbImport(DATASET_FOLDER "image512.ppm");
 wbImage_t inputImage1024 = wbImport(DATASET_FOLDER "image1024.ppm");
 wbImage_t inputImage2048 = wbImport(DATASET_FOLDER "image2048.ppm");
 wbImage_t inputImage4096 = wbImport(DATASET_FOLDER "image4096.ppm");
+wbImage_t inputImage8192 = wbImport(DATASET_FOLDER "image8192.ppm");
+wbImage_t inputImage12288 = wbImport(DATASET_FOLDER "image12288.ppm");
 
 static void BM_Par_Hist512(benchmark::State& state){
     for (auto _ : state) {
@@ -130,6 +132,34 @@ static void BM_CUDA_Hist4096(benchmark::State& state){
     }
 }
 
+static void BM_Seq_Hist8192(benchmark::State& state){
+    for (auto _ : state) {
+        auto image = cp::iterative_histogram_equalization(inputImage8192, state.range(0));
+        wbImage_delete(image);
+    }
+}
+
+static void BM_Par_Hist8192(benchmark::State& state){
+    for (auto _ : state) {
+        auto image = cp::iterative_histogram_equalization(inputImage8192, state.range(0));
+        wbImage_delete(image);
+    }
+}
+
+static void BM_Seq_Hist12288(benchmark::State& state){
+    for (auto _ : state) {
+        auto image = cp::iterative_histogram_equalization(inputImage12288, state.range(0));
+        wbImage_delete(image);
+    }
+}
+
+static void BM_Par_Hist12288(benchmark::State& state){
+    for (auto _ : state) {
+        auto image = cp::iterative_histogram_equalization(inputImage12288, state.range(0));
+        wbImage_delete(image);
+    }
+}
+
 BENCHMARK(BM_Par_Hist512)
 ->Arg(1)
 ->Arg(5)
@@ -178,13 +208,37 @@ BENCHMARK(BM_Seq_Hist4096)
 ->Arg(10)
 ->Arg(20)
 ->Unit(benchmark::kMillisecond);
+BENCHMARK(BM_Seq_Hist8192)
+->Arg(1)
+->Arg(5)
+->Arg(10)
+->Arg(20)
+->Unit(benchmark::kMillisecond);
+BENCHMARK(BM_Par_Hist8192)
+->Arg(1)
+->Arg(5)
+->Arg(10)
+->Arg(20)
+->Unit(benchmark::kMillisecond);
+BENCHMARK(BM_Seq_Hist12288)
+->Arg(1)
+->Arg(5)
+->Arg(10)
+->Arg(20)
+->Unit(benchmark::kMillisecond);
+BENCHMARK(BM_Par_Hist12288)
+->Arg(1)
+->Arg(5)
+->Arg(10)
+->Arg(20)
+->Unit(benchmark::kMillisecond);
 
 int main(int argc, char** argv) {
     ::benchmark::Initialize(&argc, argv);
     ::benchmark::RunSpecifiedBenchmarks();
 
     int iterations[] = {1,5,10,20};
-    wbImage_t images[] ={inputImage512,inputImage1024,inputImage2048,inputImage4096};
+    wbImage_t images[] ={inputImage512,inputImage1024,inputImage2048,inputImage4096,inputImage8192,inputImage12288};
 
     for(wbImage_t image : images){
         for(int iteration : iterations){
