@@ -142,12 +142,6 @@ BENCHMARK(BM_Seq_Hist512)
 ->Arg(10)
 ->Arg(20)
 ->Unit(benchmark::kMillisecond);
-BENCHMARK(BM_CUDA_Hist512)
-->Arg(1)->UseManualTime()
-->Arg(5)->UseManualTime()
-->Arg(10)->UseManualTime()
-->Arg(20)->UseManualTime()
-->Unit(benchmark::kMillisecond);
 BENCHMARK(BM_Par_Hist1024)
 ->Arg(1)
 ->Arg(5)
@@ -159,12 +153,6 @@ BENCHMARK(BM_Seq_Hist1024)
 ->Arg(5)
 ->Arg(10)
 ->Arg(20)
-->Unit(benchmark::kMillisecond);
-BENCHMARK(BM_CUDA_Hist1024)
-->Arg(1)->UseManualTime()
-->Arg(5)->UseManualTime()
-->Arg(10)->UseManualTime()
-->Arg(20)->UseManualTime()
 ->Unit(benchmark::kMillisecond);
 BENCHMARK(BM_Par_Hist2048)
 ->Arg(1)
@@ -178,12 +166,6 @@ BENCHMARK(BM_Seq_Hist2048)
 ->Arg(10)
 ->Arg(20)
 ->Unit(benchmark::kMillisecond);
-BENCHMARK(BM_CUDA_Hist2048)
-->Arg(1)->UseManualTime()
-->Arg(5)->UseManualTime()
-->Arg(10)->UseManualTime()
-->Arg(20)->UseManualTime()
-->Unit(benchmark::kMillisecond);
 BENCHMARK(BM_Par_Hist4096)
 ->Arg(1)
 ->Arg(5)
@@ -196,10 +178,25 @@ BENCHMARK(BM_Seq_Hist4096)
 ->Arg(10)
 ->Arg(20)
 ->Unit(benchmark::kMillisecond);
-BENCHMARK(BM_CUDA_Hist4096)
-->Arg(1)->UseManualTime()
-->Arg(5)->UseManualTime()
-->Arg(10)->UseManualTime()
-->Arg(20)->UseManualTime()
-->Unit(benchmark::kMillisecond);
-BENCHMARK_MAIN();
+
+int main(int argc, char** argv) {
+    ::benchmark::Initialize(&argc, argv);
+    ::benchmark::RunSpecifiedBenchmarks();
+
+    int iterations[] = {1,5,10,20};
+    wbImage_t images[] ={inputImage512,inputImage1024,inputImage2048,inputImage4096};
+
+    for(wbImage_t image : images){
+        for(int iteration : iterations){
+            auto start= std::chrono::high_resolution_clock::now();
+
+            auto imageAfter = cuda::iterative_histogram_equalization(image, iteration);
+
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double, std::milli> time = end - start;
+            std::cout << "N.Iterations: " << iteration << ", Time: " << time.count() << " ms" << std::endl;
+        }
+    }
+
+    return 0;
+}
